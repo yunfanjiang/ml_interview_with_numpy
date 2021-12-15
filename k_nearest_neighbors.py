@@ -27,7 +27,7 @@ def get_k_nearest_neighbors(
     ]
     sorted_label = np.stack(sorted_label, axis=0)
     # select k-nearest neighbors
-    neighbors = label[:, :k]
+    neighbors = sorted_label[:, :k]
     return neighbors
 
 
